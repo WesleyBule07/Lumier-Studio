@@ -1,0 +1,301 @@
+:root{
+    --background-color: #EDF1F5;
+    --color-primary:#0145F2;
+    --color-neutal-muted: #e8e6ec; 
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+}
+body{
+    background-color:var(--background-color);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin:0 auto;
+
+}
+
+/*Estilo do cabecalho*/
+
+nav{
+    display: flex;
+    color: var(--color-neutral-fg);
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    height: 8vh;
+}
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    margin-left: 2rem;
+    color: var(--color-neutral-fg);
+
+    &:hover{
+        text-decoration:overline 4px;
+        transition: 0.2s;
+    }
+}
+
+.banner-trabalho {
+    background-color: var(--color-primary);
+    width: 100%;               
+    padding: 60px 0; 
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+}
+
+.banner-trabalho h1 {
+    color: var(--background-color);            
+    font-family: 'Impact', 'Arial Black', sans-serif; 
+    font-size: 3.5em;         
+    font-weight: 900;          
+    letter-spacing: 1px;       
+    margin: 0;                 
+    text-transform: uppercase; 
+}
+ 
+ /*Estilo dos paragrafos*/
+img{
+    max-width: 23%;
+    margin-left: 15rem;
+    align-items: center;
+    
+    
+}
+
+
+
+.imagem-site{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;    
+    gap: 54px;
+    width:auto;
+    height:600px;
+    margin-top: 8rem;
+    
+
+}
+ 
+.txt-cima{
+    align-items: center;
+    margin-right: 25rem;
+    
+}
+
+
+    
+.text-cima{ 
+  flex-direction: row;
+  margin-right: 25rem;
+   
+}
+
+
+.texto-acima{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+ 
+ 
+ 
+    
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-right: 25rem;
+}
+
+.card{
+    height: 15rem;
+    width: 25%;
+    margin-top: 2rem;
+    
+}
+
+
+.nossos-clientes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 10rem;
+}
+
+.lista{ 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.gerallist{
+    display: flex;
+    gap: 6rem;
+    padding: 4rem;
+
+
+}
+
+
+footer {
+
+    background:var(--color-neutal-muted);
+
+    color: var(--color-neutral-fg);
+
+    padding: 70px 7% 25px;
+}
+
+
+.footer-content {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 60px;
+
+    padding-bottom: 60px;
+}
+
+
+.footer-brand h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-brand p {
+
+    max-width: 300px;
+
+    color: var(--cor-texto);
+
+    line-height: 1.7;
+}
+
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.footer-column h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 16px;
+}
+
+
+.footer-column a,
+.footer-column p {
+
+    color: var(--color-neutral-fg);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+
+.footer-column a:hover {
+
+    color: var(--cor-primaria);
+}
+
+
+/* linha*/
+
+.footer-bottom {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #333333;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: #888888;
+
+    font-size: 12px;
+}
+
+
+/*responsividade*/
+
+@media (max-width: 900px) {
+
+    .nav {
+        gap: 18px;
+    }
+
+    .home-content {
+        min-height: 70vh;
+        padding: 50px 25px;
+    }
+
+    .creative-message {
+        min-height: 300px;
+    }
+
+    .message h2 {
+        font-size: clamp(55px, 12vw, 110px);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+
+
+ 

@@ -1,0 +1,350 @@
+/*variaveis de cor usadas na pagina*/
+:root {--primary-color:#FFFFFF;
+    --main-brand-color:#0145f2;
+    --cor-texto: #121826;
+    --color-neutal-mute: #E8E6E6;
+    --color-neutral-fg: #121826;
+    --banner-color:#EDF1F5;
+}
+
+.texto-centro{
+    text-align: center;
+}
+
+/*Card principal, Card-Pai*/
+/*Responsividade*/
+.card-container{
+width: 60%;
+margin: 100px auto;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 20px;
+
+}
+
+
+.card{
+flex:300px;
+padding: 20px;
+background-color: #f8f9fa;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba (0, 0, 0, 0.1);
+text-align: center;
+cursor: pointer;
+transition: 0.4s ease;
+}
+
+/*Hover coloration de cada Card, (card 1, card2, card3, card4, card5, card6)*/
+.card1:hover{
+background-color:#00b894;
+color: #ffffff;    
+
+}
+
+.card2:hover{
+background-color:var(--main-brand-color);
+color: #ffffff;    
+
+}
+
+.card3:hover{
+background-color:#f9ca24;
+color: #ffffff;    
+
+}
+.card4:hover{
+background-color:#FF9087;
+color: #FFFFFF;    
+
+}
+.card5:hover{
+background-color:#182d55;
+color: #ffffff;    
+
+}
+.card6:hover{
+background-color:#ff4d6d;;
+color: #ffffff;    
+
+}
+/*Titulo geral de todos cards com responsividade*/
+.card h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: 000;
+}
+/*Paragrafo geral de todos cards com responsividade*/
+.card p{
+    color: var(--cor-texto);
+    font-size: 1em;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align:center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*tamanho e cor do fundo do Body*/
+body {height: 100vh;
+    background-color: var(--primary-color)
+}
+
+/*tamanho da fonte, cor, espacamento do logo LUMIER STUDIO*/
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--cor-texto);
+    letter-spacing: 2px;
+}
+/*NAV BAR*/
+nav{
+    display: flex;
+    color: var(--color-neutral-fg);
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 8vh;
+}
+
+.nav-bar{
+    display: flex;
+}
+.nav-bar a{
+    text-decoration: none;
+    margin-left: 2rem;
+    color: var(--color-neutral-fg);
+
+    &:hover{
+        text-decoration:overline 4px;
+        transition: 0.2s;
+    }
+}
+
+.banner-trabalho {
+    background-color: var(--main-brand-color);
+    width: 100%;               
+    padding: 60px 0; 
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+}
+
+.banner-trabalho h1 {
+    color: var(--banner-color);            
+    font-family: 'Impact', 'Arial Black', sans-serif; 
+    font-size: 3.5em;         
+    font-weight: 900;          
+    letter-spacing: 1px;       
+    margin: 0;                 
+    text-transform: uppercase; 
+}
+
+/*Tamanho da fonte, tipo de fonte, espacamento e coloracao do texto H2 NOSSOS SERVICOS*/
+.fonte-h2{
+    font-weight: 1000;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       letter-spacing: -2px;
+       color: var(--primary-color);
+       font-size: 3em;
+}
+
+/*Coloracao, background, alinhamento e ordem do Texto Nossos Servicos*/
+
+/*pequena divisao entre os NOSSOS SERVICOS e as 6 cards dos Servicos*/
+.text{
+display: flex;
+justify-content: center;
+align-content: center;
+
+}
+
+ 
+footer {
+
+    background: var(--color-neutal-mute);
+
+    color: var(--color-neutral-fg);
+
+    padding: 70px 7% 25px;
+}
+
+
+.footer-content {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 60px;
+
+    padding-bottom: 60px;
+}
+
+
+.footer-brand h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-brand p {
+
+    max-width: 300px;
+
+    color: var(--cor-texto);
+
+    line-height: 1.7;
+}
+
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+    
+}
+.footer-links{
+    list-style: none;
+}
+
+.footer-column h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 16px;
+}
+
+
+.footer-column a,
+.footer-column p {
+
+    color: var(--color-neutral-fg);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+
+.footer-column a:hover {
+
+    color: var(--cor-primaria);
+}
+
+
+/* linha*/
+
+.footer-bottom {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #333333;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: #888888;
+
+    font-size: 12px;
+}
+
+
+/*responsividade*/
+
+@media (max-width: 900px) {
+
+
+
+    .home-content {
+        min-height: 70vh;
+        padding: 50px 25px;
+    }
+
+    .creative-message {
+        min-height: 300px;
+    }
+
+    .message h2 {
+        font-size: clamp(55px, 12vw, 110px);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+
+
+    .home {
+        padding: 100px 15px 40px;
+    }
+
+    .home-content {
+        min-height: 75vh;
+        border-radius: 25px;
+    }
+
+    .intro {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .creative-message {
+        min-height: 240px;
+    }
+
+    .message h2 {
+        font-size: clamp(45px, 15vw, 85px);
+        letter-spacing: -2px;
+    }
+
+    .message p {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .home-content h2{
+        font-size:3rem;
+
+    }
+}
