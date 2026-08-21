@@ -159,6 +159,7 @@ footer .socials a{
 }
 
 
+
 @media (min-width: 320px){
     .photo-gallery{
         grid-template-columns: 1fr;
@@ -179,16 +180,35 @@ footer .socials a{
         align-items: start;
         justify-content: start;
     }
+        footer{
+
+        display: grid;
+        grid-template-columns: repeat();
+    }
 }
+
+
 
 @media(min-width: 720px){
     .photo-gallery{ 
-        grid-template-columns: repeat(auto-fit, minmax(310  px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(340px,1fr));
     }
 
     .nav-bar{
         display: flex;
     }
+        .nav-bar a{
+        display: flex;
+    }
+
+    .nav-bar img{
+        display: none;
+    }   
+
+    footer{
+        display: flex;
+    }
+
 
 
 }
@@ -214,5 +234,6 @@ footer .socials a{
     .nav-bar img{
         display: none;
     }
+    
 
 } 
