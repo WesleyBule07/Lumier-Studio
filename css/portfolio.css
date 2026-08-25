@@ -160,6 +160,8 @@ footer .socials a{
 
 
 
+
+
 @media (min-width: 320px){
     .photo-gallery{
         grid-template-columns: 1fr;
@@ -197,7 +199,7 @@ footer .socials a{
     .nav-bar{
         display: flex;
     }
-        .nav-bar a{
+    .nav-bar a{
         display: flex;
     }
 
@@ -215,9 +217,7 @@ footer .socials a{
 
 
 @media(min-width:1024px){
-    .nav-bar{
-        display: flex;
-    }
+
     .photo-gallery{
         margin: 0.25rem;
         display: grid;
@@ -227,13 +227,8 @@ footer .socials a{
 
     }
 
-    .nav-bar a{
-        display: flex;
-    }
 
-    .nav-bar img{
-        display: none;
-    }
-    
+
+
 
 } 

@@ -1,0 +1,298 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+:root {
+  --cor-primaria: #0145f2;
+  --cor-texto: #121826;
+  --backgroud: #ffffff;
+  --verde: #00b894;
+  --rosa: #ff4d6d;
+  --azul-escuro: #182d55;
+  --amarelo: #f9ca24;
+  --cor-fundo2: #e8e6e6;
+
+  --espaco-base: 20px;
+  --raio-borda: 30px;
+}
+.mudanca-de-fundo{
+  height: 100vh;
+  animation: change 5000ms ease-in-out infinite;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home {
+  
+
+  width: 90%;
+  height: 100vh;
+  width: 25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ overflow:auto;
+ 
+  
+}
+.home::-webkit-scrollbar{
+  display: none;
+}
+
+.intro{
+  color: var(--backgroud);
+  font-size: 1.6rem;
+  position: relative;
+  top: 36vh;
+
+}
+.home1{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  animation: mudanca 80s linear infinite;
+  
+}
+
+
+.message{
+  flex: 12 0 5em;
+  height: 5em;
+  padding: 1rem;
+  
+  font-size: 2rem;
+  text-align: center;
+  align-content: center;
+}
+
+@keyframes mudanca {
+  0%{
+    translate: 100%;
+    
+    
+  }
+  12.5%{
+    translate: 50%;
+  }
+  25%{
+    translate: 0%;
+  }
+  37.5%{
+    translate: -50%;
+  }
+  50%{
+    translate: -100%;
+  }
+  62.5%{
+    translate: -50%;
+    
+    
+  }
+
+  75%{
+    translate: 0%;
+  }
+   87.5%{
+    translate: 50%;
+  }
+   100%{
+    translate: 80%;
+  }
+
+}
+
+
+
+
+@keyframes change {
+  0% {
+    background-color: var(--verde);
+  }
+
+  25% {
+    background-color: var(--cor-primaria);
+  }
+
+  50% {
+    background-color: var(--amarelo);
+  }
+
+  75% {
+    background-color: var(--cor-fundo2);
+  }
+
+  100% {
+    background-color: var(--azul-escuro);
+  }
+}
+
+body {
+  background-color: rgb(222, 236, 231);
+}
+
+
+/* ====== elementos da section======*/
+.cartoes-geral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(172, 183, 156);
+  ;
+}
+/*============flexibilidade dos cartoes=======*/
+.cartoes {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: 2px;
+}
+/*==============estilizacao dos cartoes========*/
+.cartao {
+  overflow: hidden;
+  border: 1px solid black;
+  width: 30%;
+  height: 45vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  position: relative;
+}
+.cartao:hover{
+  border: 4px solid rgb(156, 204, 84);
+  transform: translateY(-1%);
+}
+
+.cartao hr {
+  width: 98%;
+  text-align: justify;
+  position: relative;
+  top: 0%;
+}
+
+.cartao h2 {
+  font-size: 1.5em;
+  position: relative;
+top: 0%;
+}
+.cartao1{
+  transform: translateY(70%);
+}
+
+
+.cartao img {
+  width: 98%;
+  height: 60%;
+  border-radius: 0.8rem;
+  position: relative;
+  top: 0%;
+}
+
+.cartao p {
+  font-size: 1rem;
+  width: 98%;
+  text-align: justify;
+  position: relative;
+  top: 0%;
+}
+
+.cta {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 8px 10px;
+  border: 1px solid blue;
+  border-radius: 16px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cta:hover {
+  background-color: white;
+  color: var(--cor-texto);
+  transform: scale(1.1);
+}
+
+@media (min-width:300px) {
+  .cartoes {
+    height: 120vh;
+    flex-direction: column;
+    gap: 5px;
+  }
+.cartao{
+  width: 80%;
+  height: 100vh;
+}
+.cartao h2 {
+    font-size: 1rem;
+    margin-top:  5px;
+
+  }
+  .cartao p {
+    font-size: 0.8rem;
+
+  }
+  .intro{
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+   .cartoes {
+  
+    flex-direction: row;
+  }
+.cartao{
+  width: 80%;
+ 
+}
+.cartao h2 {
+     font-size: 1.6rem;
+    position: absolute;
+    top: 1.5vh;
+
+  }
+  .cartao p {
+    font-size: 1rem;
+
+  }
+  .intro{
+    font-size: 1.3rem;
+  }
+  
+}
+@media (min-width:1024px) {
+   .cartoes {
+  
+    flex-direction: row;
+  }
+  .intro{
+    font-size: 1.6rem;
+  }
+  .cartao h2 {
+    font-size: 2rem;
+    position: absolute;
+    top: 0vh;
+
+  }
+ 
+
+}
