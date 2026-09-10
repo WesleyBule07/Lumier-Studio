@@ -6,7 +6,20 @@
   padding: 0;
 }
 
-
+:root{
+    --background-color: #FFFFF;
+    --color-brand-primary: #0145F2;
+    --color-neutral-fg: #121826;
+    --color-brand-accent: #00d2ff;
+    --color-neutal-bg: #edf1f5;
+    --color-neutal-surface: #e8e6ec;
+    --color-neutal-muted: #6c757d;
+    --color-neutal-border: #e2e8f0;
+    --color-feedback-success: #10b981;
+    --color-feedback-warming: #f59e0b;
+    --color-feedbsxk-error: #ef4444;
+    --color-feedback-info: #3b82f6;
+}
 /*
 
 =========================
@@ -44,9 +57,10 @@ nav{
 }
 
 
-
-
 /*
+
+
+
 
 =========================
     Footer

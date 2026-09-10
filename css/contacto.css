@@ -66,3 +66,13 @@ button {
   border: none;
   background-color: transparent;
 }
+
+.banner-trabalho h2 {
+    color: var(--color-neutal-bg);            
+    font-family: 'Impact', 'Arial Black', sans-serif; 
+    font-size: 3.5em;         
+    font-weight: 900;          
+    letter-spacing: 1px;       
+    margin: 0;                 
+}
+
